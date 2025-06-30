@@ -1,0 +1,50 @@
+# --- Python ---
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- Virtual Environment ---
+# In our case, the venv folder itself should be ignored
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# --- Secrets ---
+# The .env file containing API keys and other secrets
+.env
+
+# --- IDE / Editor specific ---
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
