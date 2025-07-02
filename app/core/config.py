@@ -53,6 +53,8 @@ class Settings(BaseSettings):
     # Use a comma-separated string for .env, then parse into a list
     BACKEND_CORS_ORIGINS_CSV: str = "http://localhost:3000,http://127.0.0.1:3000" # Sensible default
 
+    FRONTEND_URL: str = "http://localhost:3000"
+
     @property
     def parsed_cors_origins(self) -> List[str]: # Renamed property for clarity
         if isinstance(self.BACKEND_CORS_ORIGINS_CSV, str):

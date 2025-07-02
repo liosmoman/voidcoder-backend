@@ -158,5 +158,5 @@ async def callback_google(
         user_given_name=user_given_name # Pass given_name (first name)
     )
 
-    frontend_callback_url = f"http://localhost:3000/auth/callback?token={app_access_token}"
+    frontend_callback_url = f"{settings.FRONTEND_URL}/auth/callback?token={app_access_token}"
     return RedirectResponse(url=frontend_callback_url)
